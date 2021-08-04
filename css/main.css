@@ -1,0 +1,143 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #3E3E3E;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ul, li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #3E3E3E;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+h2:first-letter {
+  text-transform: uppercase;
+}
+
+p:first-letter {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  flex-grow: 1;
+}
+
+.footer {
+  height: 50px;
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 calc(50% - 621px);
+}
+
+.mask__content {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header {
+  position: relative;
+  background-color: #eee;
+}
+.header__top {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  cursor: pointer;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.menu__list {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 200;
+  top: 60px;
+  width: 120px;
+  background: white;
+  padding: 32px;
+  left: -120px;
+  transition: left 0.3s;
+}
+.menu__item:not(:last-child) {
+  padding-bottom: 16px;
+}
+.menu__ul:first-child {
+  padding-top: 32px;
+}
+.menu__link {
+  color: #3E3E3E;
+  text-decoration: none;
+}
+.menu__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.menu__tclose {
+  cursor: pointer;
+}
+
+#menu__toggle:checked ~ .menu__list {
+  left: 0;
+  box-shadow: 4px 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+#menu__toggle:checked ~ .mask__content {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 17px !important;
+  }
+
+  h2 span {
+    font-size: 18px !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
