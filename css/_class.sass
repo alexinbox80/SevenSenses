@@ -1,3 +1,9 @@
+::placeholder
+  color: #FAFAFA
+
+input
+  outline: none
+
 .wrapper
   min-height: 100%
   display: flex
@@ -5,10 +11,6 @@
 
 .top
   flex-grow: 1
-
-.footer
-  height: 50px
-  background-color: $backgroundColor
 
 .content
   padding: 0 calc(50% - 626px)
@@ -77,10 +79,78 @@
     text-align: center
     left: -30px
     top: 25px
-    +fontProper(14px, 400, 14x, .01em, #FFF)
-    width: 181px
+    +fontProper(14px, 400, 14px, .01em, #FFF)
+    padding: 8px 7px
     background-color: #000
     border: 1px solid #000
 
+.footer
+  min-height: 430px
+  background-color: $backgroundColorFooter
 
+  &__textinput
+    width: 280px
+    height: 26px
+    padding-left: 10px
+    padding-right: 10px
+    margin-bottom: 16px
+    background-color: $backgroundColorFooter
+    border: 0
+    border-bottom: 1px solid #FFF
+    +fontProper(14px, 400, 14px, .01em, #FAFAFA)
 
+  &__top
+    display: flex
+    margin-top: 48px
+    justify-content: space-between
+
+  &__lheader
+    +fontProper(18px, 500, 24px, .01em, #FFF)
+    margin-bottom: 24px
+
+  &__inflink,
+  &__ablink,
+  &__phlink
+    +fontProper(14px, 400, 18px, .01em, #FFF)
+    font-family: 'Open sans', sans-serif
+    text-decoration: none
+
+  &__linkitem:not(:last-child)
+    margin-bottom: 16px
+
+  &__hline
+    margin-top: 66px
+    margin-bottom: 24px
+
+  &__bottom ul
+    display: flex
+    justify-content: space-between
+
+  &__linktext
+    +fontProper(14px, 400, 18px, .01em, #FFF)
+    font-family: 'Open sans', sans-serif
+    text-decoration: none
+
+  &__snetwork
+    align-items: center
+    display: flex
+
+    &-icon
+      margin-right: 12px
+
+  &__snetwork:not(:last-child)
+    margin-right: 32px
+
+  &__button
+    padding: 17px 24px
+    border: 1px solid #FFF
+    background-color: $backgroundColorFooter
+    +fontProper(16px, 600, 16px, .01em, #FFF)
+    font-family: 'Open sans', sans-serif
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+
+    &-icon
+      margin-right: 12px
