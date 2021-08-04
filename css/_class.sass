@@ -8,10 +8,10 @@
 
 .footer
   height: 50px
-  background-color: #ccc
+  background-color: $backgroundColor
 
 .content
-  padding: 0 calc(50% - 621px)
+  padding: 0 calc(50% - 626px)
 
 .mask__content
   display: block
@@ -27,7 +27,7 @@
 
 .header
   position: relative
-  background-color: #eee
+  background-color: $backgroundColor
 
   &__top
     height: $headerHeight
@@ -37,3 +37,50 @@
 
   &__menu
     cursor: pointer
+    display: flex
+    justify-content: center
+    margin-top: 24px
+    margin-bottom: 16px
+
+  &__txtpos
+    margin-left: 8px
+    +fontProper(16px, 400, 20px, .01em, $fontColor)
+
+  &__logo
+    margin-top: 24px
+
+  &__item
+    display: flex
+    align-items: center
+
+  &__item li:not(:last-child)
+    margin-right: 24px
+
+  &__titem a
+    +fontProper(15px, 400, 20px, .01em, $fontColor)
+    text-decoration: none
+
+  &__titem:not(:last-child)
+    margin-right: 40px
+
+  &__bottombg
+    background: url("../img/banner.jpg") no-repeat center
+    min-height: 788px
+
+#header__position
+  position: relative
+  display: inline-block
+
+  &:hover:after
+    content: attr(data-position)
+    position: absolute
+    text-align: center
+    left: -30px
+    top: 25px
+    +fontProper(14px, 400, 14x, .01em, #FFF)
+    width: 181px
+    background-color: #000
+    border: 1px solid #000
+
+
+

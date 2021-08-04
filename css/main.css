@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  color: #3E3E3E;
+  font-family: "Lora", serif;
+  color: #1F1B20;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -25,7 +25,7 @@ h2 {
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: #3E3E3E;
+  color: #1F1B20;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -50,11 +50,11 @@ p:first-letter {
 
 .footer {
   height: 50px;
-  background-color: #ccc;
+  background-color: #FFFFFF;
 }
 
 .content {
-  padding: 0 calc(50% - 621px);
+  padding: 0 calc(50% - 626px);
 }
 
 .mask__content {
@@ -72,16 +72,73 @@ p:first-letter {
 
 .header {
   position: relative;
-  background-color: #eee;
+  background-color: #FFFFFF;
 }
 .header__top {
-  height: 60px;
+  height: 86px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header__menu {
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+.header__txtpos {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #1F1B20;
+}
+.header__logo {
+  margin-top: 24px;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+}
+.header__item li:not(:last-child) {
+  margin-right: 24px;
+}
+.header__titem a {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  color: #1F1B20;
+  text-decoration: none;
+}
+.header__titem:not(:last-child) {
+  margin-right: 40px;
+}
+.header__bottombg {
+  background: url("../img/banner.jpg") no-repeat center;
+  min-height: 788px;
+}
+
+#header__position {
+  position: relative;
+  display: inline-block;
+}
+#header__position:hover:after {
+  content: attr(data-position);
+  position: absolute;
+  text-align: center;
+  left: -30px;
+  top: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14x;
+  letter-spacing: 0.01em;
+  color: #FFF;
+  width: 181px;
+  background-color: #000;
+  border: 1px solid #000;
 }
 
 input[type=checkbox] {
@@ -92,7 +149,7 @@ input[type=checkbox] {
   position: absolute;
   box-sizing: border-box;
   z-index: 200;
-  top: 60px;
+  top: 86px;
   width: 120px;
   background: white;
   padding: 32px;
@@ -106,7 +163,7 @@ input[type=checkbox] {
   padding-top: 32px;
 }
 .menu__link {
-  color: #3E3E3E;
+  color: #1F1B20;
   text-decoration: none;
 }
 .menu__close {
