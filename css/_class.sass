@@ -54,15 +54,37 @@ input
   &__item
     display: flex
     align-items: center
+    cursor: pointer
 
   &__item li:not(:last-child)
     margin-right: 24px
 
-  &__titem a
+  &__search:hover svg path
+    stroke: $colorSelect
+
+  &__favorite:hover svg path
+    stroke: $colorSelect
+
+  &__cart:hover svg path
+    stroke: $colorSelect
+
+  &__login:hover svg path
+    fill: $colorSelect
+
+  &__title a
     +fontProper(15px, 400, 20px, .01em, $fontColor)
     text-decoration: none
 
-  &__titem:not(:last-child)
+  &__title
+    &-label
+      +fontProper(15px, 400, 20px, .01em, $fontColor)
+      text-decoration: none
+      cursor: pointer
+
+      &:hover
+        color: $colorSelect
+
+  &__title:not(:last-child)
     margin-right: 40px
 
   &__bottombg
@@ -105,7 +127,6 @@ input
     justify-content: space-between
 
   &__lheader
-    +fontProper(18px, 500, 24px, .01em, #FFF)
     margin-bottom: 24px
 
   &__inflink,

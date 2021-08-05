@@ -1,42 +1,141 @@
 input[type="checkbox"]
   display: none
 
-.menu
-  &__list
+.online__shop
+  &-menu
+    visibility: hidden
+    opacity: 0
+    transition: visibility, opacity .3s ease
     position: absolute
-    box-sizing: border-box
-    z-index: 200
-    top: $headerHeight
-    width: $menuWidth
-    background: white
-    padding: 32px
-    left: -$menuWidth
-    transition: left .3s
+    top: 147px
+    left: 0
+    width: 100%
+    background: $backgroundColor
+    height: 304px
+    +fontProper(15px, 400, 20px, .01em, $fontColorMenu)
+    font-family: 'Open sans', sans-serif
 
-  &__item:not(:last-child)
-    padding-bottom: 16px
+  &-ul
+    column-count: 3
+    padding: 0 calc(50% - 295px)
+    margin-top: 16px
 
-  &__ul:first-child
-    padding-top: 32px
+  &-li
+    margin-bottom: 16px
 
-  &__link
-    color: $fontColor
-    text-decoration: none
+  &-link:hover
+    color: $colorSelect
 
-  &__close
+#online__shop
+  &:checked ~ .online__shop-menu
+    visibility: visible
+    opacity: 0.8
+
+#online__shop
+  &:checked + .header__title-label
+    text-decoration: underline
+    color: $colorSelect
+
+.collection
+  &__menu
+    visibility: hidden
+    opacity: 0
+    transition: visibility, opacity .3s ease
     position: absolute
-    top: 16px
-    right: 16px
+    top: 147px
+    left: 0
+    width: 100%
+    background: $backgroundColor
+    height: 304px
+    +fontProper(15px, 400, 20px, .01em, $fontColorMenu)
+    font-family: 'Open sans', sans-serif
 
-  &__tclose
-    cursor: pointer
+  &__ul
+    padding: 0 calc(50% - 130px)
+    margin-top: 16px
 
-#menu__toggle:checked ~ .menu__list
-  left: 0
-  box-shadow: 4px 0 20px 0 rgb(0 0 0 / 50%)
+  &__li
+    margin-bottom: 16px
 
-#menu__toggle:checked ~ .mask__content
-  visibility: visible
-  opacity: 1
-  -webkit-transition: opacity .5s, visibility .5s
-  transition: opacity .5s, visibility .5s
+  &__link:hover
+    color: $colorSelect
+
+#collection
+  &:checked ~ .collection__menu
+    visibility: visible
+    opacity: 0.8
+
+#collection
+  &:checked + .header__title-label
+    text-decoration: underline
+    color: $colorSelect
+
+.information
+  &__menu
+    visibility: hidden
+    opacity: 0
+    transition: visibility, opacity .3s ease
+    position: absolute
+    top: 147px
+    left: 0
+    width: 100%
+    background: $backgroundColor
+    height: 304px
+    +fontProper(15px, 400, 20px, .01em, $fontColorMenu)
+    font-family: 'Open sans', sans-serif
+
+  &__ul
+    position: absolute
+    left: calc(50% - 8px)
+    margin-top: 16px
+
+  &__li
+    margin-bottom: 16px
+
+  &__link:hover
+    color: $colorSelect
+
+#information
+  &:checked ~ .information__menu
+    visibility: visible
+    opacity: 0.8
+
+#information
+  &:checked + .header__title-label
+    text-decoration: underline
+    color: $colorSelect
+
+.habout
+  &__menu
+    visibility: hidden
+    opacity: 0
+    transition: visibility, opacity .3s ease
+    position: absolute
+    top: 147px
+    left: 0
+    width: 100%
+    background: $backgroundColor
+    height: 304px
+    +fontProper(15px, 400, 20px, .01em, $fontColorMenu)
+    font-family: 'Open sans', sans-serif
+
+  &__ul
+    position: absolute
+    left: calc(50% + 205px)
+    margin-top: 16px
+
+  &__li
+    margin-bottom: 16px
+
+  &__link:hover
+    color: $colorSelect
+
+#habout
+  &:checked ~ .habout__menu
+    visibility: visible
+    opacity: 0.8
+
+#habout
+  &:checked + .header__title-label
+    text-decoration: underline
+    color: $colorSelect
