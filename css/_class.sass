@@ -59,6 +59,9 @@ input
   &__item li:not(:last-child)
     margin-right: 24px
 
+  &__item li:nth-last-child(-n+2)
+    margin-right: 0
+
   &__search:hover svg path
     stroke: $colorSelect
 
@@ -123,7 +126,7 @@ input
 
   &__top
     display: flex
-    margin-top: 48px
+    padding-top: 48px
     justify-content: space-between
 
   &__lheader
@@ -175,3 +178,127 @@ input
 
     &-icon
       margin-right: 12px
+
+.about__text
+  margin-top: 72px
+  margin-bottom: 72px
+  padding: 0 calc(50% - 354px)
+  +fontProper(16px, 400, 24px, .01em, #000)
+  text-align: center
+
+.section__collection
+  &-box
+    display: flex
+    margin-bottom: 64px
+
+  &-item
+    width: calc(100% / 2 - 20px)
+
+  &-item:not(:last-child)
+    margin-right: 44px
+
+  &-title
+    margin-bottom: 24px
+
+  &-img
+    width: 100%
+
+.section__newitems
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 24px
+
+  &-box
+    display: flex
+    margin-bottom: 64px
+
+  &-item
+    width: calc(100% / 4 - 20px)
+
+  &-item:not(:last-child)
+    margin-right: 44px
+
+  &-img
+    width: 100%
+
+  &-title
+    margin-top: 16px
+
+  &-price
+    display: flex
+    margin-top: 16px
+    +fontProper(16px, 600, 20px, .01em, #525C77)
+    font-family: $fontFamilyBody
+
+  &-crossed
+    text-decoration: line-through
+    margin-left: 8px
+
+  &-color
+    display: flex
+    margin-top: 16px
+
+  &-color li:not(:last-child)
+    margin-right: 10px
+
+.section__bestseller
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 24px
+
+  &-box
+    display: flex
+    margin-bottom: 100px
+
+  &-item
+    width: calc(100% / 4 - 20px)
+
+  &-item:not(:last-child)
+    margin-right: 44px
+
+  &-img
+    width: 100%
+
+  &-title
+    margin-top: 16px
+
+  &-price
+    display: flex
+    margin-top: 16px
+    +fontProper(16px, 600, 20px, .01em, #525C77)
+    font-family: $fontFamilyBody
+
+  &-crossed
+    text-decoration: line-through
+    margin-left: 8px
+
+  &-color
+    display: flex
+    margin-top: 16px
+
+  &-color li:not(:last-child)
+    margin-right: 10px
+
+.section__lookbook
+  &-box
+    display: flex
+    margin-bottom: 64px
+
+  &-header
+    margin-bottom: 24px
+
+  &-item
+    width: calc(100% / 2 - 20px)
+
+  &-item:not(:last-child)
+    margin-right: 44px
+
+  &-ritem:not(:last-child)
+    margin-bottom: 35px
+
+
+

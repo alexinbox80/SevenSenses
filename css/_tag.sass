@@ -2,7 +2,7 @@ html
   height: 100%
 
 body
-  font-family: $fontFamily
+  font-family: $fontFamilyBody
   color: $fontColor
   height: 100%
   padding: 0
@@ -15,14 +15,17 @@ ul, li
 
 h1, h2, h3, h4, h5, h6
   margin: 0
+  font-family: $fontFamilyHeader
+
+h2
+  +fontProper(24px, 500, 36px, .01em, #333333)
 
 h3
   +fontProper(18px, 500, 24px, .01em, #FFF)
 
-h2
-  +fontProper(32px, 400, 40px, .02em, $fontColor)
-  text-align: center
-  padding-bottom: 20px
+h4
+  +fontProper(16px, 600, 20px, .01em, #2F343D)
+  font-family: $fontFamilyBody
 
 h2:first-letter
   text-transform: uppercase
