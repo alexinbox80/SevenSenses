@@ -27,6 +27,9 @@ input
   visibility: hidden
   opacity: 0
 
+.header__logo-pic
+  width: 210px
+
 .header
   position: relative
   background-color: $backgroundColor
@@ -94,7 +97,7 @@ input
     background: url("../img/banner.jpg") no-repeat center
     min-height: 788px
 
-#header__position
+#header__position-text
   position: relative
   display: inline-block
 
@@ -108,6 +111,13 @@ input
     padding: 8px 7px
     background-color: #000
     border: 1px solid #000
+
+.header__position
+  display: flex
+  align-items: center
+
+.footer__discount-mobile
+  display: none
 
 .footer
   min-height: 430px
@@ -300,5 +310,8 @@ input
   &-ritem:not(:last-child)
     margin-bottom: 35px
 
+  &-limg
+    width: 100%
 
-
+  &-rimg
+    width: 100%

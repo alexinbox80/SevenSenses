@@ -89,6 +89,10 @@ input {
   opacity: 0;
 }
 
+.header__logo-pic {
+  width: 210px;
+}
+
 .header {
   position: relative;
   background-color: #FFFFFF;
@@ -168,11 +172,11 @@ input {
   min-height: 788px;
 }
 
-#header__position {
+#header__position-text {
   position: relative;
   display: inline-block;
 }
-#header__position:hover:after {
+#header__position-text:hover:after {
   content: attr(data-position);
   position: absolute;
   text-align: center;
@@ -186,6 +190,15 @@ input {
   padding: 8px 7px;
   background-color: #000;
   border: 1px solid #000;
+}
+
+.header__position {
+  display: flex;
+  align-items: center;
+}
+
+.footer__discount-mobile {
+  display: none;
 }
 
 .footer {
@@ -406,6 +419,12 @@ input {
 .section__lookbook-ritem:not(:last-child) {
   margin-bottom: 35px;
 }
+.section__lookbook-limg {
+  width: 100%;
+}
+.section__lookbook-rimg {
+  width: 100%;
+}
 
 input[type=checkbox] {
   display: none;
@@ -574,13 +593,202 @@ input[type=checkbox] {
   color: #AB5946;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1439px) {
   h2 {
-    font-size: 17px !important;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: #333333;
   }
 
-  h2 span {
-    font-size: 18px !important;
+  .content {
+    padding: 0 40px;
+  }
+
+  .section__collection-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .section__newitems-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .section__lookbook-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .section__lookbook-ritem:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  .section__newitems-item {
+    width: calc(100% / 3 - 20px);
+  }
+  .section__newitems-item:nth-last-child(-n+2) {
+    margin-right: 0;
+  }
+  .section__newitems-item:last-child {
+    display: none;
+  }
+
+  .section__bestseller-item:not(:last-child) {
+    margin-right: 28px;
+  }
+
+  .section__bestseller-item {
+    width: calc(100% / 3 - 20px);
+  }
+  .section__bestseller-item:nth-last-child(-n+2) {
+    margin-right: 0;
+  }
+  .section__bestseller-item:last-child {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header__logo {
+    margin-top: 0;
+  }
+
+  .header__position {
+    display: none;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu-pad {
+    display: block;
+  }
+
+  .header__top {
+    justify-content: unset;
+  }
+
+  .header__logo {
+    margin-left: 28px;
+  }
+
+  .header__icons {
+    margin-left: auto;
+  }
+
+  .footer__discount {
+    display: none;
+  }
+  .footer__discount-mobile {
+    display: block;
+    margin-top: 24px;
+  }
+  .footer__textinput {
+    width: 166px;
+  }
+  .footer__hline {
+    margin-top: 24px;
+  }
+
+  .footer__bottom ul {
+    justify-content: unset;
+  }
+  .footer__bottom-ul {
+    justify-content: unset;
+    flex-direction: column;
+  }
+  .footer__bottom-li {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .header__logo-pic {
+    width: 188px;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .header__menu-pad {
+    display: none;
+  }
+  .header__menu-mob {
+    display: block;
+  }
+  .header__login {
+    display: none;
+  }
+  .header__logo {
+    margin-left: 0;
+  }
+
+  .section__collection-box {
+    flex-direction: column;
+  }
+  .section__collection-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .section__newitems-box {
+    flex-direction: column;
+  }
+  .section__newitems-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .section__newitems-item:last-child {
+    display: block;
+  }
+
+  .section__lookbook-box {
+    flex-direction: column;
+  }
+  .section__lookbook-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .section__bestseller-box {
+    flex-direction: column;
+  }
+  .section__bestseller-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .section__bestseller-item:last-child {
+    display: block;
+  }
+
+  .footer__top {
+    flex-direction: column;
+  }
+  .footer__top div {
+    margin-bottom: 32px;
+  }
+
+  .footer__textinput {
+    width: 100%;
+  }
+  .footer__button {
+    width: 100%;
+  }
+
+  .footer__snetwork-ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__snetwork-bm {
+    margin-bottom: 24px;
   }
 }
 

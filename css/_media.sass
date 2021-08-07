@@ -1,22 +1,187 @@
-@media screen and (max-width: 1400px)
-@media screen and (max-width: 1200px)
-@media screen and (max-width: 992px)
-@media screen and (max-width: 768px)
-@media screen and (max-width: 576px)
-
+@media screen and (max-width: 1439px)
   h2
-    font-size: 17px !important
+    +fontProper(22px, 500, 34px, .01em, #333333)
 
-  h2 span
-    font-size: 18px !important
+  .content
+    padding: 0 40px
 
+  .section__collection-item:not(:last-child)
+    margin-right: 28px
 
+  .section__newitems-item:not(:last-child)
+    margin-right: 28px
 
+  .section__lookbook-item:not(:last-child)
+    margin-right: 28px
 
+  .section__lookbook-ritem:not(:last-child)
+    margin-bottom: 9px
 
+  .section__newitems
+    &-item
+      width: calc(100% / 3 - 20px)
 
+    &-item:nth-last-child(-n+2)
+      margin-right: 0
 
+    &-item:last-child
+      display: none
 
+  .section__bestseller-item:not(:last-child)
+    margin-right: 28px
 
+  .section__bestseller
+    &-item
+      width: calc(100% / 3 - 20px)
 
+    &-item:nth-last-child(-n+2)
+      margin-right: 0
 
+    &-item:last-child
+      display: none
+
+@media screen and (max-width: 1023px)
+  .header__logo
+    margin-top: 0
+  //h2
+    +fontProper(22px, 500, 34px, .01em, #333333)
+
+  //.content
+    padding: 0 40px
+
+  .header__position
+    display: none
+
+  .header__search
+    display: none
+
+  .header__menu
+    display: none
+
+  .header__menu-pad
+    display: block
+
+  .header__top
+    justify-content: unset
+    //margin-bottom: 16px
+
+  .header__logo
+    margin-left: 28px
+
+  .header__icons
+    margin-left: auto
+
+  .footer
+    &__discount
+      display: none
+
+    &__discount-mobile
+      display: block
+      margin-top: 24px
+
+    &__textinput
+      width: 166px
+
+    &__hline
+      margin-top: 24px
+
+  .footer__bottom
+    & ul
+      justify-content: unset
+
+    &-ul
+      justify-content: unset
+      flex-direction: column
+
+    &-li
+      margin-bottom: 24px
+
+@media screen and (max-width: 639px)
+  .header__logo-pic
+    width: 188px
+
+  .content
+    padding: 0 20px
+
+  .header
+    &__menu-pad
+      display: none
+
+    &__menu-mob
+      display: block
+
+    &__login
+      display: none
+
+    &__logo
+      margin-left: 0
+
+  .section__collection
+    &-box
+      flex-direction: column
+
+    &-item
+      width: 100%
+      margin-right: 0
+      margin-bottom: 24px
+
+  .section__newitems
+    &-box
+      flex-direction: column
+
+    &-item
+      width: 100%
+      margin-right: 0
+      margin-bottom: 24px
+
+    &-item:last-child
+      display: block
+
+  .section__lookbook
+    &-box
+      flex-direction: column
+
+    &-item
+      width: 100%
+      margin-right: 0
+      margin-bottom: 24px
+
+  .section__bestseller
+    &-box
+      flex-direction: column
+
+    &-item
+      width: 100%
+      margin-right: 0
+      margin-bottom: 24px
+
+    &-item:last-child
+      display: block
+
+  .footer__top
+    flex-direction: column
+
+    & div
+      margin-bottom: 32px
+
+  .footer
+    &__textinput
+      width: 100%
+
+    &__button
+      width: 100%
+
+    //&__wlogo
+      display: block
+      margin-bottom: 24px
+
+  .footer__snetwork-ul
+    display: flex
+    flex-direction: column
+
+  .footer__snetwork-bm
+    margin-bottom: 24px
+
+@media screen and (max-width: 375px)
+.header__logo-pic
+  //width: 130px
