@@ -31,8 +31,233 @@
                             </svg>
                         </label>
                         <nav class="header__menu-mobile">
-
+                            <ul class="header__menu-mobileul">
+                                <li class="header__menu-header">
+                                    <label for="header__menu-pad" class="header__menu-closecross">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.594 19.5332C20.8869 19.8261 20.8869 20.3009 20.594 20.5938C20.3011 20.8867 19.8262 20.8867 19.5333 20.5938L12.0003 13.0608L4.46723 20.5938C4.17434 20.8867 3.69946 20.8867 3.40657 20.5938C3.11368 20.3009 3.11368 19.8261 3.40657 19.5332L10.9396 12.0001L3.40632 4.46684C3.11342 4.17394 3.11342 3.69907 3.40632 3.40618C3.69921 3.11328 4.17408 3.11328 4.46698 3.40618L12.0003 10.9395L19.5336 3.40618C19.8265 3.11328 20.3013 3.11328 20.5942 3.40618C20.8871 3.69907 20.8871 4.17394 20.5942 4.46684L13.0609 12.0001L20.594 19.5332Z" fill="#2F343D"/>
+                                        </svg>
+                                    </label>
+                                    <div class="header__menu-mobilepos">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z"
+                                                  stroke="#2F343D" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                            <path d="M17.657 16.6572L13.414 20.9002C13.039 21.2748 12.5306 21.4853 12.0005 21.4853C11.4704 21.4853 10.962 21.2748 10.587 20.9002L6.343 16.6572C5.22422 15.5384 4.46234 14.1129 4.15369 12.5611C3.84504 11.0092 4.00349 9.40071 4.60901 7.93893C5.21452 6.47714 6.2399 5.22774 7.55548 4.3487C8.87107 3.46967 10.4178 3.00049 12 3.00049C13.5822 3.00049 15.1289 3.46967 16.4445 4.3487C17.7601 5.22774 18.7855 6.47714 19.391 7.93893C19.9965 9.40071 20.155 11.0092 19.8463 12.5611C19.5377 14.1129 18.7758 15.5384 17.657 16.6572V16.6572Z"
+                                                  stroke="#2F343D" stroke-width="1.5" stroke-linecap="round"
+                                                  stroke-linejoin="round"/>
+                                        </svg>
+                                        <span class="header__menu-mobiletxt">Москва</span>
+                                    </div>
+                                </li>
+                                <li class="header__menu-search">
+                                    <button class="header__menu-button" type="button">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" stroke="#1F1B20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M21 21L15 15" stroke="#1F1B20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <input class="header__menu-searchinp" type="text" placeholder="Поиск по сайту">
+                                </li>
+                                <li class="header__menu-mobileli">
+                                    <input id="header__menu-onlineshop" type="checkbox">
+                                    <label for="header__menu-onlineshop">Онлайн-магазин</label>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="header__menu-onlineshopul">
+                                        <li class="header__menu-onlineshopheader">
+                                            <label class="header__menu-onlineshopheader" for="header__menu-onlineshop">
+                                                <svg class="header__menu-onlineshopicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#leftarrow1)">
+                                                        <path d="M19 12L5 12" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12 19L5 12L12 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="leftarrow1">
+                                                            <rect width="24" height="24" fill="white"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                Вернуться назад
+                                            </label>
+                                        </li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Платья</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Деним</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Комплекты</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Топы и блузы</a>
+                                        </li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Футболки и
+                                            толстовки</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Рубашки</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Шапки</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Панамы</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Юбки</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Брюки и шорты</a>
+                                        </li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Жакеты</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Аксессуары</a>
+                                        </li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Evening
+                                            collections</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Украшения</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косынки</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Шарфы</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Купальники</a>
+                                        </li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Снуды</a></li>
+                                        <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Комплект</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-mobileli">
+                                    <input id="header__menu-collection" type="checkbox">
+                                    <label for="header__menu-collection">Коллекции</label>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="header__menu-collectionul">
+                                        <li class="header__menu-collectionheader">
+                                            <label class="header__menu-collectionheader" for="header__menu-collection">
+                                                <svg class="header__menu-collectionicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#leftarrow2)">
+                                                        <path d="M19 12L5 12" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12 19L5 12L12 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="leftarrow2">
+                                                            <rect width="24" height="24" fill="white"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                Вернуться назад
+                                            </label>
+                                        </li>
+                                        <li class="header__menu-collectionli"><a href="#" class="header__menu-collectionlink">Зима</a></li>
+                                        <li class="header__menu-collectionli"><a href="#" class="header__menu-collectionlink">Осень</a></li>
+                                        <li class="header__menu-collectionli"><a href="#" class="header__menu-collectionlink">Лето</a></li>
+                                        <li class="header__menu-collectionli"><a href="#" class="header__menu-collectionlink">Весна</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-mobileli">
+                                    <input id="header__menu-information" type="checkbox">
+                                    <label for="header__menu-information">Информация и условия</label>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="header__menu-informationul">
+                                        <li class="header__menu-informationheader">
+                                            <label class="header__menu-informationheader" for="header__menu-information">
+                                                <svg class="header__menu-informationicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#leftarrow3)">
+                                                        <path d="M19 12L5 12" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12 19L5 12L12 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="leftarrow3">
+                                                            <rect width="24" height="24" fill="white"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                Вернуться назад
+                                            </label>
+                                        </li>
+                                        <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Вопросы и
+                                            ответы</a></li>
+                                        <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Доставка</a></li>
+                                        <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Оплата</a></li>
+                                        <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Возврат</a></li>
+                                        <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Отзывы</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__menu-mobileli">
+                                    <input id="header__menu-habout" type="checkbox">
+                                    <label for="header__menu-habout">О компании</label>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <ul class="header__menu-haboutul">
+                                        <li class="header__menu-haboutheader">
+                                            <label class="header__menu-haboutheader" for="header__menu-habout">
+                                                <svg class="header__menu-habouticon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#leftarrow4)">
+                                                        <path d="M19 12L5 12" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12 19L5 12L12 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="leftarrow4">
+                                                            <rect width="24" height="24" fill="white"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                Вернуться назад
+                                            </label>
+                                        </li>
+                                        <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">О нас</a></li>
+                                        <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Офис</a></li>
+                                        <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Контакты</a></li>
+                                        <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Сотрудничество</a></li>
+                                        <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Карьера</a></li>
+                                        <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Новости</a></li>
+                                        <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Новости</a></li>
+                                        <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Новости</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="header__menu-bottomul">
+                                <li class="header__menu-bottomli">
+                                    <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9998 11C14.2089 11 15.9998 9.20914 15.9998 7C15.9998 4.79086 14.2089 3 11.9998 3C9.79062 3 7.99976 4.79086 7.99976 7C7.99976 9.20914 9.79062 11 11.9998 11Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4 21L4 19C4 17.9391 4.5619 16.9217 5.5621 16.1716C6.56229 15.4214 7.91885 15 9.33333 15L14.6667 15C16.0812 15 17.4377 15.4214 18.4379 16.1716C19.4381 16.9217 20 17.9391 20 19V21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Личный кабинет</li>
+                                <li class="header__menu-bottomli">
+                                    <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.5084 12.5777L18.5709 13.5062M18.5709 13.5062L17.6334 14.4347L16.6959 15.3632L15.7584 16.2917L14.8209 17.2202L13.8834 18.1487L12.9459 19.0772L12.0084 20.0057L11.0709 19.0772L10.1334 18.1487L9.19586 17.2202L8.25836 16.2917L7.32086 15.3632L6.38336 14.4347L5.44586 13.5062L4.50836 12.5777C4.01366 12.0963 3.624 11.5177 3.36391 10.8784C3.10381 10.239 2.97892 9.55268 2.9971 8.86266C3.01527 8.17265 3.17612 7.49387 3.46952 6.86907C3.76291 6.24427 4.18249 5.68699 4.70184 5.23231C5.2212 4.77764 5.82906 4.43542 6.48717 4.22721C7.14528 4.019 7.83936 3.94931 8.52573 4.02253C9.21209 4.09575 9.87586 4.31029 10.4752 4.65264C11.0746 4.99499 11.5966 5.45773 12.0084 6.01173C12.4219 5.46175 12.9445 5.00305 13.5435 4.66434C14.1424 4.32562 14.8049 4.11418 15.4893 4.04325C16.1737 3.97232 16.8654 4.04343 17.5211 4.25212C18.1768 4.46082 18.7824 4.8026 19.2999 5.25609C19.8174 5.70958 20.2358 6.26502 20.5288 6.88762C20.8218 7.51023 20.9831 8.18661 21.0027 8.87444C21.0222 9.56226 20.8996 10.2467 20.6425 10.885C20.3854 11.5232 19.9993 12.1016 19.5084 12.5837L18.5709 13.5062Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Избранное
+                                </li>
+                                <li class="header__menu-bottomli">
+                                    <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 7.49997L5 7.49997H3L3 18.5C3 19.6045 3.89543 20.5 5 20.5H19C20.1046 20.5 21 19.6045 21 18.5V7.49997H19Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.99988 9.50003L7.99988 5.50003C7.99988 4.9696 8.21059 4.46089 8.58566 4.08582C8.96074 3.71074 9.46944 3.50003 9.99988 3.50003L13.9999 3.50003C14.5303 3.50003 15.039 3.71074 15.4141 4.08582C15.7892 4.46089 15.9999 4.9696 15.9999 5.50003L15.9999 9.50003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Корзина
+                                </li>
+                                <li class="header__menu-bottomli">
+                                    <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 17H3L3 6C3 5.73478 3.10536 5.48043 3.29289 5.29289C3.48043 5.10536 3.73478 5 4 5L13 5L13 17M13 17H9M13 17H15M19 17L21 17L21 11M21 11L13 11M21 11L18 6L13 6M19 17C19 18.1046 18.1046 19 17 19C15.8954 19 15 18.1046 15 17C15 15.8954 15.8954 15 17 15C18.1046 15 19 15.8954 19 17ZM9 17C9 18.1046 8.10457 19 7 19C5.89543 19 5 18.1046 5 17C5 15.8954 5.89543 15 7 15C8.10457 15 9 15.8954 9 17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Доставка и оплата
+                                </li>
+                                <li class="header__menu-bottomli">
+                                    <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 3L7 3C6.46957 3 5.96086 3.21071 5.58579 3.58579C5.21071 3.96086 5 4.46957 5 5L5 19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21L17 21C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V8M14 3L19 8M14 3V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8L19 8M11 14H12L12 18H13M12 11H12.01" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Вопросы и ответы
+                                </li>
+                            </ul>
+                            <ul class="header__menu-footer">
+                                <li class="header__menu-bottomli">
+                                    <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 4L9 4L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15L20 19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21C14.0993 20.763 10.4202 19.1065 7.65683 16.3432C4.8935 13.5798 3.23705 9.90074 3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <a class="header__menu-phlink" href="tel:+79213456821">8 921 345 68 21</a>
+                                </li>
+                                <li class="header__menu-bottomli">
+                                    <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 4L9 4L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15L20 19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21C14.0993 20.763 10.4202 19.1065 7.65683 16.3432C4.8935 13.5798 3.23705 9.90074 3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <a class="header__menu-phlink" href="tel:+79212134195">8 921 213 41 95</a>
+                                </li>
+                            </ul>
                         </nav>
+                        <div class="mask__content"></div>
                         <div class="header__position">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -103,7 +328,7 @@
                     </li>
                     <li class="header__icons">
                         <ul class="header__item">
-                            <li class="header__search">
+                            <li class="header__search header__itemli">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.6667 19.8333C16.177 19.8333 19.8333 16.177 19.8333 11.6667C19.8333 7.15634 16.177 3.5 11.6667 3.5C7.15634 3.5 3.5 7.15634 3.5 11.6667C3.5 16.177 7.15634 19.8333 11.6667 19.8333Z"
@@ -113,7 +338,7 @@
                                           stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </li>
-                            <li class="header__favorite">
+                            <li class="header__favorite  header__itemli">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M22.7597 14.6741L21.6659 15.7574M21.6659 15.7574L20.5722 16.8406L19.4784 17.9239L18.3847 19.0071L17.2909 20.0904L16.1972 21.1736L15.1034 22.2569L14.0097 23.3401L12.9159 22.2569L11.8222 21.1736L10.7284 20.0904L9.63467 19.0071L8.54092 17.9239L7.44717 16.8406L6.35342 15.7574L5.25967 14.6741C4.68253 14.1125 4.22792 13.4375 3.92448 12.6915C3.62103 11.9456 3.47532 11.1449 3.49653 10.3399C3.51773 9.53487 3.70539 8.74296 4.04769 8.01402C4.38998 7.28509 4.87949 6.63493 5.4854 6.10447C6.09131 5.57402 6.80049 5.17477 7.56828 4.93186C8.33607 4.68895 9.14584 4.60765 9.9466 4.69307C10.7474 4.77849 11.5218 5.02878 12.221 5.42819C12.9203 5.8276 13.5293 6.36747 14.0097 7.0138C14.4921 6.37216 15.1018 5.83701 15.8006 5.44184C16.4994 5.04667 17.2722 4.79999 18.0708 4.71724C18.8693 4.63449 19.6763 4.71745 20.4412 4.96092C21.2062 5.2044 21.9127 5.60315 22.5165 6.13222C23.1203 6.66129 23.6083 7.3093 23.9502 8.03567C24.292 8.76205 24.4802 9.55116 24.503 10.3536C24.5259 11.1561 24.3828 11.9546 24.0828 12.6993C23.7829 13.4439 23.3324 14.1186 22.7597 14.6811L21.6659 15.7574Z"
@@ -121,7 +346,7 @@
                                           stroke-linejoin="round"/>
                                 </svg>
                             </li>
-                            <li class="header__cart">
+                            <li class="header__cart header__itemli">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M22.1667 8.75H5.83333H3.5V21.5833C3.5 22.872 4.54467 23.9167 5.83333 23.9167H22.1667C23.4553 23.9167 24.5 22.872 24.5 21.5833V8.75H22.1667Z"
@@ -132,7 +357,7 @@
                                           stroke-linejoin="round"/>
                                 </svg>
                             </li>
-                            <li class="header__login">
+                            <li class="header__login  header__itemli">
                                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -140,7 +365,7 @@
                                           fill="#2F343D"/>
                                 </svg>
                             </li>
-                            <li class="header__menu-mob">
+                            <li class="header__menu-mob header__itemli">
                                 <input type="checkbox" id="header__menu-mob">
                                 <label for="header__menu-mob" class="header__menu-mob">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
@@ -152,8 +377,291 @@
                                     </svg>
                                 </label>
                                 <nav class="header__menu-mobile">
+                                    <!-- HERE -->
+                                    <!--
+                                    <ul class="header__menu-mobileul">
+                                        <li class="header__menu-header">
+                                            <label for="header__menu-mob" class="header__menu-closecross">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.594 19.5332C20.8869 19.8261 20.8869 20.3009 20.594 20.5938C20.3011 20.8867 19.8262 20.8867 19.5333 20.5938L12.0003 13.0608L4.46723 20.5938C4.17434 20.8867 3.69946 20.8867 3.40657 20.5938C3.11368 20.3009 3.11368 19.8261 3.40657 19.5332L10.9396 12.0001L3.40632 4.46684C3.11342 4.17394 3.11342 3.69907 3.40632 3.40618C3.69921 3.11328 4.17408 3.11328 4.46698 3.40618L12.0003 10.9395L19.5336 3.40618C19.8265 3.11328 20.3013 3.11328 20.5942 3.40618C20.8871 3.69907 20.8871 4.17394 20.5942 4.46684L13.0609 12.0001L20.594 19.5332Z" fill="#2F343D"/>
+                                                </svg>
+                                            </label>
+                                            <div class="header__menu-mobilepos">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z"
+                                                          stroke="#2F343D" stroke-width="1.5" stroke-linecap="round"
+                                                          stroke-linejoin="round"/>
+                                                    <path d="M17.657 16.6572L13.414 20.9002C13.039 21.2748 12.5306 21.4853 12.0005 21.4853C11.4704 21.4853 10.962 21.2748 10.587 20.9002L6.343 16.6572C5.22422 15.5384 4.46234 14.1129 4.15369 12.5611C3.84504 11.0092 4.00349 9.40071 4.60901 7.93893C5.21452 6.47714 6.2399 5.22774 7.55548 4.3487C8.87107 3.46967 10.4178 3.00049 12 3.00049C13.5822 3.00049 15.1289 3.46967 16.4445 4.3487C17.7601 5.22774 18.7855 6.47714 19.391 7.93893C19.9965 9.40071 20.155 11.0092 19.8463 12.5611C19.5377 14.1129 18.7758 15.5384 17.657 16.6572V16.6572Z"
+                                                          stroke="#2F343D" stroke-width="1.5" stroke-linecap="round"
+                                                          stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="header__menu-mobiletxt">Москва</span>
+                                            </div>
+                                        </li>
+                                        <li class="header__menu-search">
+                                            <button class="header__menu-button" type="button">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" stroke="#1F1B20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21 21L15 15" stroke="#1F1B20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <input class="header__menu-searchinp" type="text" placeholder="Поиск по сайту">
+                                        </li>
+                                        <li class="header__menu-mobileli">
+                                            Онлайн-магазин
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </li>
+                                        <li class="header__menu-mobileli">
+                                            Коллекции
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </li>
+                                        <li class="header__menu-mobileli">
+                                            Информация и условия
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </li>
+                                        <li class="header__menu-mobileli">
+                                            О компании
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </li>
+                                    </ul>
+-->
+                                    <ul class="header__menu-mobileul">
+                                        <li class="header__menu-header">
+                                            <label for="header__menu-mob" class="header__menu-closecross">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.594 19.5332C20.8869 19.8261 20.8869 20.3009 20.594 20.5938C20.3011 20.8867 19.8262 20.8867 19.5333 20.5938L12.0003 13.0608L4.46723 20.5938C4.17434 20.8867 3.69946 20.8867 3.40657 20.5938C3.11368 20.3009 3.11368 19.8261 3.40657 19.5332L10.9396 12.0001L3.40632 4.46684C3.11342 4.17394 3.11342 3.69907 3.40632 3.40618C3.69921 3.11328 4.17408 3.11328 4.46698 3.40618L12.0003 10.9395L19.5336 3.40618C19.8265 3.11328 20.3013 3.11328 20.5942 3.40618C20.8871 3.69907 20.8871 4.17394 20.5942 4.46684L13.0609 12.0001L20.594 19.5332Z" fill="#2F343D"/>
+                                                </svg>
+                                            </label>
+                                            <div class="header__menu-mobilepos">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                     xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 14C13.6569 14 15 12.6569 15 11C15 9.34315 13.6569 8 12 8C10.3431 8 9 9.34315 9 11C9 12.6569 10.3431 14 12 14Z"
+                                                          stroke="#2F343D" stroke-width="1.5" stroke-linecap="round"
+                                                          stroke-linejoin="round"/>
+                                                    <path d="M17.657 16.6572L13.414 20.9002C13.039 21.2748 12.5306 21.4853 12.0005 21.4853C11.4704 21.4853 10.962 21.2748 10.587 20.9002L6.343 16.6572C5.22422 15.5384 4.46234 14.1129 4.15369 12.5611C3.84504 11.0092 4.00349 9.40071 4.60901 7.93893C5.21452 6.47714 6.2399 5.22774 7.55548 4.3487C8.87107 3.46967 10.4178 3.00049 12 3.00049C13.5822 3.00049 15.1289 3.46967 16.4445 4.3487C17.7601 5.22774 18.7855 6.47714 19.391 7.93893C19.9965 9.40071 20.155 11.0092 19.8463 12.5611C19.5377 14.1129 18.7758 15.5384 17.657 16.6572V16.6572Z"
+                                                          stroke="#2F343D" stroke-width="1.5" stroke-linecap="round"
+                                                          stroke-linejoin="round"/>
+                                                </svg>
+                                                <span class="header__menu-mobiletxt">Москва</span>
+                                            </div>
+                                        </li>
+                                        <li class="header__menu-search">
+                                            <button class="header__menu-button" type="button">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 17C13.866 17 17 13.866 17 10C17 6.13401 13.866 3 10 3C6.13401 3 3 6.13401 3 10C3 13.866 6.13401 17 10 17Z" stroke="#1F1B20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M21 21L15 15" stroke="#1F1B20" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </button>
+                                            <input class="header__menu-searchinp" type="text" placeholder="Поиск по сайту">
+                                        </li>
+                                        <li class="header__menu-mobileli">
+                                            <input id="header__menu-monlineshop" type="checkbox">
+                                            <label for="header__menu-monlineshop">Онлайн-магазин</label>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <ul class="header__menu-onlineshopul">
+                                                <li class="header__menu-onlineshopheader">
+                                                    <label class="header__menu-onlineshopheader" for="header__menu-monlineshop">
+                                                        <svg class="header__menu-onlineshopicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#leftarrow5)">
+                                                                <path d="M19 12L5 12" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12 19L5 12L12 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="leftarrow5">
+                                                                    <rect width="24" height="24" fill="white"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        Вернуться назад
+                                                    </label>
+                                                </li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Платья</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Деним</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Комплекты</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Топы и блузы</a>
+                                                </li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Футболки и
+                                                    толстовки</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Рубашки</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Шапки</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Панамы</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Юбки</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Брюки и шорты</a>
+                                                </li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Жакеты</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Аксессуары</a>
+                                                </li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Evening
+                                                    collections</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Украшения</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косынки</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Шарфы</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Купальники</a>
+                                                </li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Косметика</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Снуды</a></li>
+                                                <li class="header__menu-onlineshopli"><a class="header__menu-onlineshoplink" href="#">Комплект</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__menu-mobileli">
+                                            <input id="header__menu-mcollection" type="checkbox">
+                                            <label for="header__menu-mcollection">Коллекции</label>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <ul class="header__menu-collectionul">
+                                                <li class="header__menu-collectionheader">
+                                                    <label class="header__menu-collectionheader" for="header__menu-mcollection">
+                                                        <svg class="header__menu-collectionicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#leftarrow6)">
+                                                                <path d="M19 12L5 12" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12 19L5 12L12 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="leftarrow6">
+                                                                    <rect width="24" height="24" fill="white"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        Вернуться назад
+                                                    </label>
+                                                </li>
+                                                <li class="header__menu-collectionli"><a href="#" class="header__menu-collectionlink">Зима</a></li>
+                                                <li class="header__menu-collectionli"><a href="#" class="header__menu-collectionlink">Осень</a></li>
+                                                <li class="header__menu-collectionli"><a href="#" class="header__menu-collectionlink">Лето</a></li>
+                                                <li class="header__menu-collectionli"><a href="#" class="header__menu-collectionlink">Весна</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__menu-mobileli">
+                                            <input id="header__menu-minformation" type="checkbox">
+                                            <label for="header__menu-minformation">Информация и условия</label>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <ul class="header__menu-informationul">
+                                                <li class="header__menu-informationheader">
+                                                    <label class="header__menu-informationheader" for="header__menu-minformation">
+                                                        <svg class="header__menu-informationicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#leftarrow7)">
+                                                                <path d="M19 12L5 12" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12 19L5 12L12 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="leftarrow7">
+                                                                    <rect width="24" height="24" fill="white"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        Вернуться назад
+                                                    </label>
+                                                </li>
+                                                <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Вопросы и
+                                                    ответы</a></li>
+                                                <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Доставка</a></li>
+                                                <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Оплата</a></li>
+                                                <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Возврат</a></li>
+                                                <li class="header__menu-informationli"><a href="#" class="header__menu-informationlink">Отзывы</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__menu-mobileli">
+                                            <input id="header__menu-mhabout" type="checkbox">
+                                            <label for="header__menu-mhabout">О компании</label>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9 19L16 12L9 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <ul class="header__menu-haboutul">
+                                                <li class="header__menu-haboutheader">
+                                                    <label class="header__menu-haboutheader" for="header__menu-mhabout">
+                                                        <svg class="header__menu-habouticon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <g clip-path="url(#leftarrow8)">
+                                                                <path d="M19 12L5 12" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12 19L5 12L12 5" stroke="#2F343D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="leftarrow8">
+                                                                    <rect width="24" height="24" fill="white"/>
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+                                                        Вернуться назад
+                                                    </label>
+                                                </li>
+                                                <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">О нас</a></li>
+                                                <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Офис</a></li>
+                                                <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Контакты</a></li>
+                                                <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Сотрудничество</a></li>
+                                                <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Карьера</a></li>
+                                                <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Новости</a></li>
+                                                <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Новости</a></li>
+                                                <li class="header__menu-haboutli"><a href="#" class="header__menu-haboutlink">Новости</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
 
+                                    <ul class="header__menu-bottomul">
+                                        <li class="header__menu-bottomli">
+                                            <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.9998 11C14.2089 11 15.9998 9.20914 15.9998 7C15.9998 4.79086 14.2089 3 11.9998 3C9.79062 3 7.99976 4.79086 7.99976 7C7.99976 9.20914 9.79062 11 11.9998 11Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M4 21L4 19C4 17.9391 4.5619 16.9217 5.5621 16.1716C6.56229 15.4214 7.91885 15 9.33333 15L14.6667 15C16.0812 15 17.4377 15.4214 18.4379 16.1716C19.4381 16.9217 20 17.9391 20 19V21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Личный кабинет</li>
+                                        <li class="header__menu-bottomli">
+                                            <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.5084 12.5777L18.5709 13.5062M18.5709 13.5062L17.6334 14.4347L16.6959 15.3632L15.7584 16.2917L14.8209 17.2202L13.8834 18.1487L12.9459 19.0772L12.0084 20.0057L11.0709 19.0772L10.1334 18.1487L9.19586 17.2202L8.25836 16.2917L7.32086 15.3632L6.38336 14.4347L5.44586 13.5062L4.50836 12.5777C4.01366 12.0963 3.624 11.5177 3.36391 10.8784C3.10381 10.239 2.97892 9.55268 2.9971 8.86266C3.01527 8.17265 3.17612 7.49387 3.46952 6.86907C3.76291 6.24427 4.18249 5.68699 4.70184 5.23231C5.2212 4.77764 5.82906 4.43542 6.48717 4.22721C7.14528 4.019 7.83936 3.94931 8.52573 4.02253C9.21209 4.09575 9.87586 4.31029 10.4752 4.65264C11.0746 4.99499 11.5966 5.45773 12.0084 6.01173C12.4219 5.46175 12.9445 5.00305 13.5435 4.66434C14.1424 4.32562 14.8049 4.11418 15.4893 4.04325C16.1737 3.97232 16.8654 4.04343 17.5211 4.25212C18.1768 4.46082 18.7824 4.8026 19.2999 5.25609C19.8174 5.70958 20.2358 6.26502 20.5288 6.88762C20.8218 7.51023 20.9831 8.18661 21.0027 8.87444C21.0222 9.56226 20.8996 10.2467 20.6425 10.885C20.3854 11.5232 19.9993 12.1016 19.5084 12.5837L18.5709 13.5062Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Избранное
+                                        </li>
+                                        <li class="header__menu-bottomli">
+                                            <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19 7.49997L5 7.49997H3L3 18.5C3 19.6045 3.89543 20.5 5 20.5H19C20.1046 20.5 21 19.6045 21 18.5V7.49997H19Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.99988 9.50003L7.99988 5.50003C7.99988 4.9696 8.21059 4.46089 8.58566 4.08582C8.96074 3.71074 9.46944 3.50003 9.99988 3.50003L13.9999 3.50003C14.5303 3.50003 15.039 3.71074 15.4141 4.08582C15.7892 4.46089 15.9999 4.9696 15.9999 5.50003L15.9999 9.50003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Корзина
+                                        </li>
+                                        <li class="header__menu-bottomli">
+                                            <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5 17H3L3 6C3 5.73478 3.10536 5.48043 3.29289 5.29289C3.48043 5.10536 3.73478 5 4 5L13 5L13 17M13 17H9M13 17H15M19 17L21 17L21 11M21 11L13 11M21 11L18 6L13 6M19 17C19 18.1046 18.1046 19 17 19C15.8954 19 15 18.1046 15 17C15 15.8954 15.8954 15 17 15C18.1046 15 19 15.8954 19 17ZM9 17C9 18.1046 8.10457 19 7 19C5.89543 19 5 18.1046 5 17C5 15.8954 5.89543 15 7 15C8.10457 15 9 15.8954 9 17Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Доставка и оплата
+                                        </li>
+                                        <li class="header__menu-bottomli">
+                                            <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14 3L7 3C6.46957 3 5.96086 3.21071 5.58579 3.58579C5.21071 3.96086 5 4.46957 5 5L5 19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21L17 21C17.5304 21 18.0391 20.7893 18.4142 20.4142C18.7893 20.0391 19 19.5304 19 19V8M14 3L19 8M14 3V7C14 7.26522 14.1054 7.51957 14.2929 7.70711C14.4804 7.89464 14.7348 8 15 8L19 8M11 14H12L12 18H13M12 11H12.01" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            Вопросы и ответы
+                                        </li>
+                                    </ul>
+                                    <ul class="header__menu-footer">
+                                        <li class="header__menu-bottomli">
+                                            <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5 4L9 4L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15L20 19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21C14.0993 20.763 10.4202 19.1065 7.65683 16.3432C4.8935 13.5798 3.23705 9.90074 3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <a class="header__menu-phlink" href="tel:+79213456821">8 921 345 68 21</a>
+                                        </li>
+                                        <li class="header__menu-bottomli">
+                                            <svg class="header__menu-bottomicon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5 4L9 4L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15L20 19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21C14.0993 20.763 10.4202 19.1065 7.65683 16.3432C4.8935 13.5798 3.23705 9.90074 3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            <a class="header__menu-phlink" href="tel:+79212134195">8 921 213 41 95</a>
+                                        </li>
+                                    </ul>
                                 </nav>
+                                <div class="mask__content"></div>
                             </li>
                         </ul>
                     </li>

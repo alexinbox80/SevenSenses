@@ -145,3 +145,295 @@ input[type="checkbox"]
   &:checked + .header__title-label
     text-decoration: underline
     color: $colorSelect
+
+
+#header__menu-pad
+  &:checked ~ .mask__content
+    visibility: visible
+    opacity: 1
+    -webkit-transition: opacity 0.5s, visibility 0.5s
+    transition: opacity 0.5s, visibility 0.5s
+
+.header__menu
+  &-mobile
+    visibility: hidden
+    opacity: 0
+    transition: visibility .3s, opacity .3s ease
+    z-index: 10
+    box-sizing: border-box
+    background-color: #FFF
+    position: absolute
+    left: 0
+    top: 0
+    width: 360px
+    //height: 100vh
+    min-height: 100vh
+
+  &-header
+    display: flex
+    justify-content: space-between
+    padding: 0 28px
+
+  &-closecross
+    cursor: pointer
+
+  &-mobilepos
+    display: flex
+    align-items: center
+
+  &-mobiletxt
+    +fontProper(16px, 400, 20px, .01em, #2F343D)
+
+  &-header
+    margin-top: 28px
+
+  &-button
+    border: 0
+    background-color: #FFFFFF
+    position: absolute
+    opacity: 0.3
+
+  &-search
+    margin-top: 5px
+    padding: 0 28px
+
+  &-mobiltext
+    +fontProper(16px, 400, 24px, .01em, #2F343D)
+
+  &-mobileli
+    +fontProper(16px, 400, 24px, .01em, #2F343D)
+    font-family: "Lora", serif
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-top: 1px solid rgba(141, 149, 163, 0.3)
+    padding: 24px 28px 24px 28px
+
+  &-mobileli:last-child
+    border-bottom: 1px solid rgba(141, 149, 163, 0.3)
+
+  &-searchinp
+    width: 100%
+    box-sizing: border-box
+    border: 0
+    border-bottom: 1px solid #1F1B20
+    padding: 0 15px 9px 39px
+    +fontProper(16px, 400, 24px, .01em, #1F1B20)
+    margin-bottom: 24px
+
+  &-searchinp::placeholder
+    +fontProper(16px, 400, 24px, .01em, #1F1B20)
+    opacity: 0.3
+
+  &-bottomul
+    padding: 24px 28px 16px 28px
+    background-color: #1F1B20
+
+  &-bottomli
+    display: flex
+    align-items: center
+    +fontProper(16px, 400, 20px, .01em, #FFF)
+    padding-bottom: 16px
+
+  &-bottomicon
+    margin-right: 16px
+
+  &-footer
+    padding: 0 28px 64px 28px
+    //padding: 0 28px
+    background-color: #1F1B20
+
+    //height: 100%
+
+  &-phlink
+    text-decoration: none
+    +fontProper(16px, 600, 20px, .01em, #FFF)
+
+#header__menu-pad
+  &:checked ~ .header__menu-mobile
+    visibility: visible
+    opacity: 1
+
+#header__menu-mob
+  &:checked ~ .mask__content
+    visibility: visible
+    opacity: 1
+    -webkit-transition: opacity 0.5s, visibility 0.5s
+    transition: opacity 0.5s, visibility 0.5s
+
+#header__menu-mob
+  &:checked ~ .header__menu-mobile
+    visibility: visible
+    opacity: 1
+
+.header__menu
+  &-onlineshopul
+    visibility: hidden
+    opacity: 0
+    transition: visibility .3s, opacity .3s ease
+    position: absolute
+    top: 0
+    left: 0
+    width: 360px
+    min-height: 100vh
+    box-sizing: border-box
+    background-color: #FFF
+    padding: 28px 0 64px 0
+
+  &-onlineshopheader
+    display: flex
+    padding: 0 14px
+
+  &-onlineshopicon
+    margin-right: 16px
+
+  &-onlineshoplink
+    text-decoration: none
+    padding: 0 28px
+    +fontProper(16px, 400, 24px, .01em, #1F1B20)
+
+  &-onlineshopli
+    padding-top: 16px
+    padding-bottom: 16px
+
+  &-onlineshopli:not(:last-child)
+    border-bottom: 1px solid rgba(141, 149, 163, 0.3)
+
+#header__menu-onlineshop
+  &:checked ~ .header__menu-onlineshopul
+    visibility: visible
+    opacity: 1
+
+#header__menu-monlineshop
+  &:checked ~ .header__menu-onlineshopul
+    visibility: visible
+    opacity: 1
+
+.header__menu
+  &-collectionul
+    visibility: hidden
+    opacity: 0
+    transition: visibility .3s, opacity .3s ease
+    position: absolute
+    top: 0
+    left: 0
+    width: 360px
+    min-height: 100vh
+    box-sizing: border-box
+    background-color: #FFF
+    padding: 28px 0 64px 0
+
+  &-collectionheader
+    display: flex
+    padding: 0 14px
+
+  &-collectionicon
+    margin-right: 16px
+
+  &-collectionlink
+    text-decoration: none
+    padding: 0 28px
+    +fontProper(16px, 400, 24px, .01em, #1F1B20)
+
+  &-collectionli
+    padding-top: 16px
+    padding-bottom: 16px
+
+  &-collectionli:not(:last-child)
+    border-bottom: 1px solid rgba(141, 149, 163, 0.3)
+
+#header__menu-collection
+  &:checked ~ .header__menu-collectionul
+    visibility: visible
+    opacity: 1
+
+#header__menu-mcollection
+  &:checked ~ .header__menu-collectionul
+    visibility: visible
+    opacity: 1
+
+.header__menu
+  &-informationul
+    visibility: hidden
+    opacity: 0
+    transition: visibility .3s, opacity .3s ease
+    position: absolute
+    top: 0
+    left: 0
+    width: 360px
+    min-height: 100vh
+    box-sizing: border-box
+    background-color: #FFF
+    padding: 28px 0 64px 0
+
+  &-informationheader
+    display: flex
+    padding: 0 14px
+
+  &-informationicon
+    margin-right: 16px
+
+  &-informationlink
+    text-decoration: none
+    padding: 0 28px
+    +fontProper(16px, 400, 24px, .01em, #1F1B20)
+
+  &-informationli
+    padding-top: 16px
+    padding-bottom: 16px
+
+  &-informationli:not(:last-child)
+    border-bottom: 1px solid rgba(141, 149, 163, 0.3)
+
+#header__menu-information
+  &:checked ~ .header__menu-informationul
+    visibility: visible
+    opacity: 1
+
+#header__menu-minformation
+  &:checked ~ .header__menu-informationul
+    visibility: visible
+    opacity: 1
+
+.header__menu
+  &-haboutul
+    visibility: hidden
+    opacity: 0
+    transition: visibility .3s, opacity .3s ease
+    position: absolute
+    top: 0
+    left: 0
+    width: 360px
+    min-height: 100vh
+    box-sizing: border-box
+    background-color: #FFF
+    padding: 28px 0 64px 0
+
+  &-haboutheader
+    display: flex
+    padding: 0 14px
+
+  &-habouticon
+    margin-right: 16px
+
+  &-haboutlink
+    text-decoration: none
+    padding: 0 28px
+    +fontProper(16px, 400, 24px, .01em, #1F1B20)
+
+  &-haboutli
+    padding-top: 16px
+    padding-bottom: 16px
+
+  &-haboutli:not(:last-child)
+    border-bottom: 1px solid rgba(141, 149, 163, 0.3)
+
+#header__menu-habout
+  &:checked ~ .header__menu-haboutul
+    visibility: visible
+    opacity: 1
+
+#header__menu-mhabout
+  &:checked ~ .header__menu-haboutul
+    visibility: visible
+    opacity: 1

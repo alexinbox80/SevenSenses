@@ -43,11 +43,10 @@
 @media screen and (max-width: 1023px)
   .header__logo
     margin-top: 0
-  //h2
-    +fontProper(22px, 500, 34px, .01em, #333333)
 
-  //.content
-    padding: 0 40px
+  .header__bottombg
+    background: url("../img/banner1024.jpg") no-repeat center
+    min-height: 632px
 
   .header__position
     display: none
@@ -60,10 +59,10 @@
 
   .header__menu-pad
     display: block
+    cursor: pointer
 
   .header__top
     justify-content: unset
-    //margin-bottom: 16px
 
   .header__logo
     margin-left: 28px
@@ -80,7 +79,7 @@
       margin-top: 24px
 
     &__textinput
-      width: 166px
+      width: 187px
 
     &__hline
       margin-top: 24px
@@ -104,6 +103,10 @@
     padding: 0 20px
 
   .header
+    &__bottombg
+      background: url("../img/banner640.jpg") no-repeat center
+      min-height: 632px
+
     &__menu-pad
       display: none
 
@@ -171,10 +174,6 @@
     &__button
       width: 100%
 
-    //&__wlogo
-      display: block
-      margin-bottom: 24px
-
   .footer__snetwork-ul
     display: flex
     flex-direction: column
@@ -183,5 +182,28 @@
     margin-bottom: 24px
 
 @media screen and (max-width: 375px)
-.header__logo-pic
-  //width: 130px
+  .header__logo-pic
+    width: 140px
+
+  .header
+    &__bottombg
+      background: url("../img/banner320.jpg") no-repeat center
+      min-height: 456px
+
+  .header__menu
+    &-mobile
+      width: 100%
+
+    &-onlineshopul
+      width: 100%
+
+    &-collectionul
+      width: 100%
+
+    &-informationul
+      width: 100%
+
+    &-haboutul
+      width: 100%
+
+
